@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.7)), url(images/RestaurantFood.jpg);
+    background-position:  center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative; 
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0% ;
+    transition: 0.5s;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+       
+}
+.nav-links ul li :hover::after{
+    width: 100%
+}
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+        
+}
+.textbox h1{
+    font-size: 62px;
+   
+}
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.button {
+    display: inline-block;
+    text-decoration:none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.button:hover{
+    border:1px solid #4b476c;
+    background: #4b476c;
+    transition: 1s;
+}
+/*--------- offer-----*/
+
+.home{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2{
+    display: block;
+    font-size: 25px;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p{
+    color: #515155;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.Row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;     
+    
+}
+.homeColumn{
+    flex-basis: 31%;
+    background: #bbb6d3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/*------facilities   -----*/
+
+.facilities{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;
+            
+} 
+.Row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;     
+    
+}
+.facilitiesColumn{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    text-align: center;   
+}
+
+.facilitiesColumn img{
+    flex-basis: 31%;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    width: 100%;
+     
+}
+.facilitiesColum p{
+    padding: 0;
+}
+
+/*------Contact button-----*/
+
+.contactButton{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/about2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+ 
+}
+.contactButton h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+/*-------Footer------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #9eb6e7  url(images/scallop2.png) repeat-x top;           
+}
+
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+
+/*---- about page ----*/
+
+.subhead{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(images/decoration2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+subhead h1{
+    margin-top: 100px;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.aboutcolomn{
+    flex-basis: 48% ;
+    padding: 30px 2px;
+    }
+.aboutcolomn h1{
+     margin-left: 5em;
+    }    
+    
+.aboutcolomn img{
+    width: 75%;
+    border-radius: 25px;
+  
+    } 
+    
+/*-----services---*/
+.head1{
+     height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(images/waiter.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+/*-----food menu ----*/
+
+.subhead2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(images/food.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.menu{
+     width: 90%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;
+              
+}
+.foodmenu{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    text-align: center; 
+    
+}
+.foodmenu img{
+    width: 250px;
+    height: 250px;  
+    float: left;
+    
+}
+.foodmenu h2{
+    text-align: left;
+    border-left: double 4px #7972a8;
+    border-top: double 4px #7972a8;
+    padding-left: 1em;
+    margin-top: 2.5em;
+    
+}
+
+.foodmenu p{
+  text-align: left; 
+  font-size: 18px;
+}
+
+.listfood{
+    flex-basis: 31%;
+    background: #bbb6d3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    width: 50%;
+    
+    
+}
+.listfood li{
+    margin-left: 200px;
+    text-align: left;
+    font-size: 18px;
+}
+.listfood h3{
+    text-align: left;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    
+}
+/*-----delivery----*/
+.delivery{
+    margin-top: 5%;
+    text-align: center;
+    color:#0e369d;
+    
+}
+
+
+/*---aside----*/
+.aside{
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+}
+.asideD {
+  background: url(images/scallop.png) repeat-y left top;
+  background-color:#dddae9;
+  padding: 1em;
+  padding-left: 45px;
+  border-top-right-radius: 25px;
+  margin: 1em 2.5% 0 10%;
+  
+}
+.day {
+  color: #0e369d;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.asideD p{
+    text-align: left;
+    color: #100d19;
+}
+  
+/*------Contact us-----*/
+
+.subhead3{
+   height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 50px; 
+}
+.map{
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.contact{
+    width:80%;
+    margin: auto;
+}
+.contactColumn{
+   flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactColumn div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contactColumn div img{
+    margin: 10px;
+    right: 30px;
+    
+}
+.contactColumn div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.contactColumn div p{
+     margin-bottom: 5px;
+    font-weight: 400;
+    text-align: left; 
+}
+.newbutton {
+    display: inline-block;
+    text-decoration:none;
+    color: black;
+    border: 2px solid #862b85;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.newbutton:hover{
+    border:1px solid #9a94be;
+    background:  #9a94be;
+    transition: 1s;
+}
+.contactColumn input, .contactColumn textArea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}  
+
+/*-----galary -----*/
+
+.headgalary{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(images/tea.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #dddae9;
+    font-size: 50px; 
+}
+
+.galaryphoto{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;          
+}
+
+.galary{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    text-align: center;   
+}
+
+.galary img{
+    flex-basis: 31%;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    width:100%;    
+}
+.Row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;     
+    flex-wrap: wrap;
+}
